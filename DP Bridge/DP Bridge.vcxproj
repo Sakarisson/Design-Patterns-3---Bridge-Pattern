@@ -115,6 +115,7 @@
     <ClCompile Include="GasTurbine.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PowerSourceAdapters.cpp" />
+    <ClCompile Include="Submarine.cpp" />
     <ClCompile Include="V8Classic.cpp" />
     <ClCompile Include="Vehicle.cpp" />
   </ItemGroup>
@@ -123,6 +124,7 @@
     <ClInclude Include="GasTurbine.h" />
     <ClInclude Include="PowerSource.h" />
     <ClInclude Include="PowerSourceAdapters.h" />
+    <ClInclude Include="Submarine.h" />
     <ClInclude Include="V8Classic.h" />
     <ClInclude Include="Vehicle.h" />
   </ItemGroup>

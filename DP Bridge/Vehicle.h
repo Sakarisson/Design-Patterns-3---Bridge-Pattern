@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "PowerSource.h"
+#include "PowerSourceAdapters.h"
 
 class Vehicle {
 public:
@@ -21,6 +21,8 @@ public:
     // Operations for steering
     virtual void steerLeft(int) = 0;
     virtual void steerRight(int) = 0;
+protected:
+    std::string _name;
 private:
     PowerSource* _powerSource;
 };
