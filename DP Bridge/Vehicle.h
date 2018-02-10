@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VEHICLE_H
+#define VEHICLE_H
 
 #include <string>
 
@@ -18,3 +19,4 @@ public:
     void setPowerSource(PowerSource*);
 };
 
+#endif // !VEHICLE_H
