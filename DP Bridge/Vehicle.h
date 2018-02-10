@@ -17,6 +17,12 @@ public:
     bool decPower(int);
     virtual void drive() = 0;
     void setPowerSource(PowerSource*);
+
+    // Operations for steering
+    virtual void steerLeft(int) = 0;
+    virtual void steerRight(int) = 0;
+private:
+    PowerSource* _powerSource;
 };
 
 #endif // !VEHICLE_H
