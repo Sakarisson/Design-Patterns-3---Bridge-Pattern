@@ -6,7 +6,7 @@ Vehicle::Vehicle() {
 
 
 Vehicle::~Vehicle() {
-
+    delete _powerSource;
 }
 
 std::string Vehicle::toString() {

@@ -11,20 +11,19 @@ Train::Train(PowerSource* powerSource) {
 }
 
 Train::~Train() {
-    delete _powerSource;
+    
 }
 
 void Train::drive() {
     cout <<
         "Train starting engines..." << endl <<
-        "Powered by " << _powerSource->type() << endl <<
         "Full speed ahead!" << endl;
-    _powerSource->setPower(100);
-    _powerSource->tryStart();
+    incPower(100);
+    tryStart();
     cout << "Getting close to destination. Decreasing power..." << endl;
-    _powerSource->decPower(50);
+    decPower(50);
     cout << "Arrived at station. Stopping" << endl;
-    _powerSource->stop();
+    stop();
 }
 
 void Train::steerLeft(int degrees) {

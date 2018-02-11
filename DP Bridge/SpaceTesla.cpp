@@ -11,14 +11,14 @@ SpaceTesla::SpaceTesla(PowerSource* powerSource) {
 }
 
 SpaceTesla::~SpaceTesla() {
-    delete _powerSource;
+
 }
 
 void SpaceTesla::drive() {
     cout <<
         "Space Tesla heating up engines." << endl;
-    _powerSource->incPower(50);
-    _powerSource->tryStart();
+    incPower(50);
+    tryStart();
     cout <<
         "====================================================" << endl <<
         "Didn't know what time it was and the lights were low" << endl <<

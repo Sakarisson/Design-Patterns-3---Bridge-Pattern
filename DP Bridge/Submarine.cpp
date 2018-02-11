@@ -11,19 +11,18 @@ Submarine::Submarine(PowerSource* powerSource) {
 }
 
 Submarine::~Submarine() {
-    delete _powerSource;
+
 }
 
 void Submarine::drive() {
     cout <<
-        "Submarine starting engines..." << endl <<
-        "Powered by " << _powerSource->type() << endl;
-    _powerSource->setPower(100);
-    _powerSource->tryStart();
+        "Submarine starting engines..." << endl;
+    incPower(100);
+    tryStart();
     cout << "Decreasing pressure..." << endl;
-    _powerSource->decPower(20);
+    decPower(20);
     cout << "Missing complete. Halting power" << endl;
-    _powerSource->stop();
+    stop();
 }
 
 void Submarine::steerLeft(int degrees) {
