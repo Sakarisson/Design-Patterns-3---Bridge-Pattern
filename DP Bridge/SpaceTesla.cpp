@@ -7,7 +7,7 @@ using std::endl;
 
 SpaceTesla::SpaceTesla(PowerSource* powerSource) {
     setPowerSource(powerSource);
-    _name = "Submarine";
+    _name = "Space Tesla";
 }
 
 SpaceTesla::~SpaceTesla() {
@@ -16,6 +16,11 @@ SpaceTesla::~SpaceTesla() {
 
 void SpaceTesla::drive() {
     cout <<
+        "Space Tesla heating up engines." << endl;
+    _powerSource->incPower(50);
+    _powerSource->tryStart();
+    cout <<
+        "====================================================" << endl <<
         "Didn't know what time it was and the lights were low" << endl <<
         "I leaned back on my radio" << endl <<
         "Some cat was layin' down some get it on rock 'n' roll, he said" << endl <<
@@ -61,9 +66,9 @@ void SpaceTesla::drive() {
 }
 
 void SpaceTesla::steerLeft(int degrees) {
-
+    cout << "Thrusting retrograde " << degrees << " degrees" << endl;
 }
 
 void SpaceTesla::steerRight(int degrees) {
-
+    cout << "Thrusting prograde " << degrees << " degrees" << endl;
 }

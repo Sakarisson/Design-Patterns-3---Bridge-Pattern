@@ -8,7 +8,7 @@
 class Vehicle {
 public:
     Vehicle();
-    ~Vehicle();
+    virtual ~Vehicle();
     std::string toString();
     std::string poweredBy();
     bool tryStart();

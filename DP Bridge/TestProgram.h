@@ -15,6 +15,8 @@ public:
 private:
     bool running;
     Vehicle* vehicleAdapter;
+
+    void createVehicle(int&, int&);
 };
 
 #endif // !TESTPROGRAM_H
