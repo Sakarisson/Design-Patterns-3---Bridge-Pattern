@@ -117,6 +117,7 @@
     <ClCompile Include="PowerSourceAdapters.cpp" />
     <ClCompile Include="SpaceTesla.cpp" />
     <ClCompile Include="Submarine.cpp" />
+    <ClCompile Include="TestProgram.cpp" />
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="V8Classic.cpp" />
     <ClCompile Include="Vehicle.cpp" />
@@ -128,6 +129,7 @@
     <ClInclude Include="PowerSourceAdapters.h" />
     <ClInclude Include="SpaceTesla.h" />
     <ClInclude Include="Submarine.h" />
+    <ClInclude Include="TestProgram.h" />
     <ClInclude Include="Train.h" />
     <ClInclude Include="V8Classic.h" />
     <ClInclude Include="Vehicle.h" />

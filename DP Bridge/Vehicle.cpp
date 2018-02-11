@@ -42,5 +42,3 @@ void Vehicle::setPowerSource(PowerSource* powerSource) {
     delete _powerSource;
     _powerSource = powerSource;
 }
-
-

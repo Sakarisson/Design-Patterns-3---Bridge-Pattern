@@ -23,7 +23,6 @@ public:
     virtual void steerRight(int) = 0;
 protected:
     std::string _name;
-private:
     PowerSource* _powerSource;
 };
 
